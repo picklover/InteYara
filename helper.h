@@ -21,3 +21,11 @@ DWORD getPid(const char* lpProcessName)//根据进程名查找进程PID
 	::CloseHandle(hSnapShot);
 	return dwRet;
 }
+
+void CreateNotepadProcess()
+{
+	STARTUPINFO si = { sizeof(si) };
+	PROCESS_INFORMATION pi;
+	TCHAR szCommandLine[] = TEXT("notepad.exe");
+	CreateProcess(NULL, szCommandLine, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
+}

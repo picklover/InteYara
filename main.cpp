@@ -41,6 +41,7 @@ void testYaraScan()
     const char* myuserdata_pass = "hello";
 
 #ifdef SCAN_PROCESS
+    CreateNotepadProcess();
     int target_pid = getPid("notepad.exe");
     yr_rules_scan_proc(rules, target_pid, SCAN_FLAGS_FAST_MODE, yaraCallback_function, (void*)myuserdata_pass, NULL);
 #else

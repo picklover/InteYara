@@ -70,7 +70,7 @@
       <AdditionalIncludeDirectories>.\yara-4.2.3\libyara\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <DisableSpecificWarnings>4477</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4477;6335</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
